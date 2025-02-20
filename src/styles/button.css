@@ -1,0 +1,14 @@
+
+.btn-p {
+    background-color: var(--text-tertiary);
+    color: #000000;
+    padding: 1.1rem 2.8rem;
+    border-radius: 100px;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.btn-p:hover {
+    background-color: transparent;
+    color: #FFFFFF;
+}
