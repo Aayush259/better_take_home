@@ -1,5 +1,6 @@
 import Hero from "@/components/Hero";
 import WhyBetter from "@/components/WhyBetter";
+import GotQuestions from "@/components/GotQuestions";
 
 export default function Page() {
 
@@ -7,6 +8,7 @@ export default function Page() {
         <main>
             <Hero />
             <WhyBetter />
+            <GotQuestions />
         </main>
     );
 };
