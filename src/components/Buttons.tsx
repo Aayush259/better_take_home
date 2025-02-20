@@ -1,9 +1,5 @@
+import { ButtonProps } from "@/helpers/interfaces";
 import "@/styles/button.css";
-
-interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-    children: React.ReactNode;
-    className?: string;
-}
 
 export const ButtonPrimary = ({ children, className, ...rest }: ButtonProps) => {
     return (

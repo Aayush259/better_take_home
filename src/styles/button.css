@@ -12,3 +12,11 @@
     background-color: transparent;
     color: #FFFFFF;
 }
+
+.btn-p.dark {
+    background-color: var(--bg-primary);
+}
+
+.btn-p.dark:hover {
+    background: var(--bg-tertiary);
+}
