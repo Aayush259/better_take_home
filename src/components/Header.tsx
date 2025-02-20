@@ -6,11 +6,13 @@ import { RxHamburgerMenu, RxCross2 } from "react-icons/rx";
 import { FaCaretRight } from "react-icons/fa6";
 import { FaUser } from "react-icons/fa";
 import "@/styles/header.css";
+import { useHeader } from "@/context/HeaderContext";
 
 const Header = () => {
 
-    const [isHome, setIsHome] = useState<boolean>(false);
     const [hamActive, setHamActive] = useState<boolean>(false);
+
+    const { isHome } = useHeader();
 
     const toggleHamBurger = () => setHamActive(!hamActive);
 
