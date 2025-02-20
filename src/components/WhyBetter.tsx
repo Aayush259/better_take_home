@@ -3,7 +3,6 @@ import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import { useHeader } from "@/context/HeaderContext";
 import { whyBetterData } from "@/helpers/constants";
-import { IWhyBetter } from "@/helpers/interfaces";
 import { ButtonPrimary, ButtonSecondary } from "./Buttons";
 import { IoIosStar } from "react-icons/io";
 import "@/styles/why_better.css";
@@ -12,10 +11,8 @@ export default function WhyBetter() {
 
     const { setIsHome } = useHeader();
 
-    const [wBetter, setWBetter] = useState<IWhyBetter>(whyBetterData[0]);
+    const [wBetter, setWBetter] = useState<number>(0);
     const sectionRef = useRef<HTMLElement>(null);
-
-    const updateWBetter = (index: number) => setWBetter(whyBetterData[index]);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -41,8 +38,8 @@ export default function WhyBetter() {
         <section ref={sectionRef} id="why-better" className="flex">
             <div className="flex">
                 <Image
-                    src={wBetter.image}
-                    alt={wBetter.name}
+                    src={whyBetterData[wBetter].image}
+                    alt={whyBetterData[wBetter].name}
                     width={341}
                     height={606}
                     className="w-better-img"
@@ -53,8 +50,8 @@ export default function WhyBetter() {
                         whyBetterData.map((item, idx) => (
                             <ButtonSecondary
                                 key={idx}
-                                onClick={() => updateWBetter(idx)}
-                                className={`${wBetter.name === item.name && "active"} w-better-btn`}
+                                onClick={() => setWBetter(idx)}
+                                className={`${whyBetterData[wBetter].name === item.name && "active"} w-better-btn`}
                             >
                                 {item.name}
                             </ButtonSecondary>
