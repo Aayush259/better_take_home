@@ -22,6 +22,10 @@ header h1 a {
     background-color: transparent !important;
 }
 
+header.home h1 a {
+    color: #FFFFFF !important;
+}
+
 header>div {
     align-items: center;
     gap: 2rem;
@@ -34,6 +38,10 @@ header a {
 
 header a:hover {
     background-color: var(--bg-quaternary);
+}
+
+header.home a:hover {
+    color: var(--text-primary);
 }
 
 a.call {
@@ -52,23 +60,39 @@ a.call:hover {
     border-color: transparent;
 }
 
+header a.call:hover {
+    color: var(--text-primary);
+}
+
 a.continue {
     color: #FFFFFF;
     background-color: var(--bg-tertiary);
+}
+
+header.home a.continue {
+    background-color: var(--text-tertiary);
+    color: #000000;
 }
 
 a.continue:hover {
     background-color: var(--bg-primary);
 }
 
+header.home a.continue:hover {
+    background-color: transparent;
+    color: #FFFFFF;
+}
+
 .sidebar {
     position: fixed;
     left: -100%;
     top: 0;
+    transition-duration: 0.3s;
     min-height: 100vh;
     width: 100vw;
     background-color: #FFFFFF;
     padding: 1.5rem;
+    color: var(--text-primary) !important;
 }
 
 .sidebar.active {
