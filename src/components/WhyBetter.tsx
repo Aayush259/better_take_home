@@ -39,7 +39,7 @@ export default function WhyBetter() {
 
     return (
         <section ref={sectionRef} id="why-better" className="flex">
-            <div>
+            <div className="flex">
                 <Image
                     src={wBetter.image}
                     alt={wBetter.name}
@@ -65,10 +65,7 @@ export default function WhyBetter() {
 
             <div>
                 <p className="w-better-text">
-                    {"Find out why"}
-                </p>
-                <p className="w-better-text">
-                    {"we're better"}
+                    {"Find out why we're better"}
                 </p>
 
                 <ButtonPrimary className="see-stories-btn dark">

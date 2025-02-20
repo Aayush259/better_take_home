@@ -1,9 +1,12 @@
-
 #why-better {
     align-items: center;
     justify-content: space-between;
     background-color: #FFFDFA;
     padding: 7rem 10rem;
+}
+
+#why-better>div {
+    flex-direction: column;
 }
 
 .w-better-img {
@@ -21,6 +24,7 @@
     color: var(--text-primary);
     line-height: 1;
     font-weight: 600;
+    max-width: 500px;
 }
 
 .see-stories-btn {
@@ -39,11 +43,38 @@
     color: var(--bg-tertiary);
 }
 
-.trustpilot .main-txt, .trustpilot .sub-txt {
+.trustpilot .main-txt,
+.trustpilot .sub-txt {
     font-weight: 600;
 }
 
 .trustpilot .main-txt {
     color: #000000;
     padding-right: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    #why-better {
+        flex-direction: column-reverse;
+        padding: 4rem 1rem;
+    }
+
+    #why-better>div {
+        flex-direction: column-reverse;
+        gap: 2rem;
+    }
+
+    .w-better-text {
+        font-size: 2.5rem;
+        max-width: none;
+    }
+
+    .see-stories-btn {
+        width: 100%;
+    }
+
+    .trustpilot {
+        justify-content: center;
+        margin-bottom: 2rem;
+    }
 }
