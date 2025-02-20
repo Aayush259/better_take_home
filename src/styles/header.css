@@ -2,11 +2,12 @@ header {
     position: sticky;
     top: 0;
     z-index: 100;
-    background-color: var(--bg-secondary);
+    background-color: #FFFFFF;
     color: var(--text-primary);
     padding: 1.5rem 3rem;
     align-items: center;
     justify-content: space-between;
+    transition-duration: 0.3s;
 }
 
 header.home {

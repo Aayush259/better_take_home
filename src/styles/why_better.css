@@ -1,0 +1,67 @@
+
+#why-better {
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FFFDFA;
+    padding: 7rem 10rem;
+}
+
+.w-better-img {
+    border-radius: 20px;
+}
+
+.w-better-container {
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.w-better-btn {
+    padding: 0.8rem 1.5rem;
+    border: 1px solid lightgray;
+    border-radius: 100px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--text-primary)
+}
+
+.w-better-btn:hover, .w-better-btn.active {
+    color: var(--bg-tertiary);
+    border-color: var(--bg-tertiary);
+    box-shadow: inset 2px 2px 0 var(--bg-tertiary),
+    inset -2px -2px 0 var(--bg-tertiary),
+    inset -2px 2px 0 var(--bg-tertiary),
+    inset 2px -2px 0 var(--bg-tertiary);
+}
+
+.w-better-text {
+    font-size: 5rem;
+    color: var(--text-primary);
+    line-height: 1;
+    font-weight: 600;
+}
+
+.see-stories-btn {
+    color: #FFFFFF !important;
+    margin-top: 2rem;
+}
+
+.trustpilot {
+    margin-top: 1rem;
+    align-items: center;
+    gap: 0.2rem;
+    color: var(--text-primary);
+}
+
+.trustpilot .icon {
+    color: var(--bg-tertiary);
+}
+
+.trustpilot .main-txt, .trustpilot .sub-txt {
+    font-weight: 600;
+}
+
+.trustpilot .main-txt {
+    color: #000000;
+    padding-right: 0.5rem;
+}
