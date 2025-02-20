@@ -16,24 +16,6 @@
     margin-top: 1.5rem;
 }
 
-.w-better-btn {
-    padding: 0.8rem 1.5rem;
-    border: 1px solid lightgray;
-    border-radius: 100px;
-    font-size: 1.1rem;
-    font-weight: 500;
-    color: var(--text-primary)
-}
-
-.w-better-btn:hover, .w-better-btn.active {
-    color: var(--bg-tertiary);
-    border-color: var(--bg-tertiary);
-    box-shadow: inset 2px 2px 0 var(--bg-tertiary),
-    inset -2px -2px 0 var(--bg-tertiary),
-    inset -2px 2px 0 var(--bg-tertiary),
-    inset 2px -2px 0 var(--bg-tertiary);
-}
-
 .w-better-text {
     font-size: 5rem;
     color: var(--text-primary);

@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import { useHeader } from "@/context/HeaderContext";
 import { whyBetterData } from "@/helpers/constants";
 import { IWhyBetter } from "@/helpers/interfaces";
-import { ButtonPrimary } from "./Buttons";
+import { ButtonPrimary, ButtonSecondary } from "./Buttons";
 import { IoIosStar } from "react-icons/io";
 import "@/styles/why_better.css";
 
@@ -51,13 +51,13 @@ export default function WhyBetter() {
                 <div className="flex w-better-container">
                     {
                         whyBetterData.map((item, idx) => (
-                            <button
+                            <ButtonSecondary
                                 key={idx}
                                 onClick={() => updateWBetter(idx)}
                                 className={`${wBetter.name === item.name && "active"} w-better-btn`}
                             >
                                 {item.name}
-                            </button>
+                            </ButtonSecondary>
                         ))
                     }
                 </div>

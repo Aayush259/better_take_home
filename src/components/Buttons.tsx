@@ -11,3 +11,14 @@ export const ButtonPrimary = ({ children, className, ...rest }: ButtonProps) => 
         </button>
     );
 };
+
+export const ButtonSecondary = ({ children, className, ...rest }: ButtonProps) => {
+    return (
+        <button
+            className={`btn-s ${className}`}
+            {...rest}
+        >
+            {children}
+        </button>
+    );
+};
