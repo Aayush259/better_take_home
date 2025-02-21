@@ -91,4 +91,44 @@ export const gotQuestionsData: IGotQuestionCategory[] = [
             },
         ]
     },
-]
+];
+
+export const footLinkResources = [
+    "Home affordability calculator",
+    "Mortgage calculator",
+    "Free mortgage calculator",
+    "Mortgage calculator with taxes",
+    "Mortgage calculator with PMI",
+    "Rent vs buy calculator",
+    "HELOC payment calculator",
+    "HELOC vs cash-out refinance calculator",
+    "Buy a home",
+    "Sell a home",
+    "Get home inspection",
+];
+
+export const footLinkCompany = [
+    "About Us",
+    "Careers",
+    "Media",
+    "Patner with us",
+    "Learning center",
+    "FAQs",
+    "Investor relations",
+];
+
+export const footLinkContact = [
+    "hello@better.com",
+    "415-523-8837",
+    "FAQ",
+    "Glossary",
+];
+
+export const footLinkLegal = [
+    "NMLS Consumer Access",
+    "Privacy Policy",
+    "Terms of use",
+    "Disclosures & Licensing",
+    "Affiliate Business",
+    "Browser Disclaimer",
+];
