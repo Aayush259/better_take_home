@@ -1,9 +1,13 @@
+
 main {
     background-color: #FFFDFA;
 }
 
 #calculator {
     background-color: var(--bg-fif);
+}
+
+#mortgage-explanation, #calculator {
     color: var(--text-primary);
     padding: 4rem 5rem;
 }
@@ -251,8 +255,52 @@ input, select {
     opacity: 0.8
 }
 
+#mortgage-explanation {
+    padding-top: 0 !important;
+}
+
+#mortgage-explanation .question {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+#mortgage-explanation .answer {
+    line-height: 1.4;
+    letter-spacing: 0.4;
+    font-size: 1.1rem;
+    margin: 1rem 0;
+}
+
+#mortgage-explanation .answer div {
+    margin: 2rem 0;
+    opacity: 0.8;
+}
+
+#mortgage-explanation img {
+    display: block;
+    margin: 0.5rem auto;
+    max-width: 98%;
+    height: auto;
+}
+
+#mortgage-explanation .explanation {
+    max-width: 780px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+#mortgage-explanation .topic {
+    border-top: 1px solid lightgray;
+    padding: 2rem 0;
+}
+
+#mortgage-explanation ul {
+    padding-left: 2.5rem;
+    margin: -1rem 0;
+}
+
 @media (max-width: 900px) {
-    #payment-breakdown, #calculator {
+    #payment-breakdown, #calculator, #mortgage-explanation {
         padding: 2rem 1rem;
     }
 }
