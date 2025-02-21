@@ -21,12 +21,12 @@ export interface IGotQuestionCategory {
 }
 
 export interface ICalculatorInput {
-    homePrice: number;       // In dollars
-    downPayment: number;     // In dollars
-    interestRate: number;    // Annual interest rate in percentage (e.g., 4.5)
-    loanTerm: number;        // In years (e.g., 30)
-    propertyTaxes: number;   // Monthly property taxes in dollars
-    homeInsurance: number;   // Monthly homeowners insurance in dollars
-    hoaFees: number;         // Monthly HOA fees in dollars
-    utilities: number;       // Monthly utilities cost in dollars
+    homePrice: number;
+    downPayment: number;
+    interestRate: number;
+    loanTerm: number;
+    propertyTaxes: number;
+    homeInsurance: number;
+    hoaFees: number;
+    utilities: number;
 }

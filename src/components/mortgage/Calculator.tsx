@@ -12,6 +12,7 @@ export default function Calculator() {
     const defaultTaxes = searchParams.get("taxes") ? Number(searchParams.get("taxes")) : 265;
     const defaultZip = searchParams.get("zip") ? Number(searchParams.get("zip")) : 302002;
 
+    // State for inputs
     const [inputs, setInputs] = useState<ICalculatorInput>({
         homePrice: 300000,
         downPayment: 60000,
@@ -25,8 +26,10 @@ export default function Calculator() {
 
     const [zip, setZip] = useState<number>(defaultZip);
 
+    // Ref for range input
     const rangeInputRef = useRef<HTMLInputElement>(null);
 
+    // Function to calculate principal and interest
     const calculatePrincipalAndInterest = ({
         homePrice,
         downPayment,
@@ -46,15 +49,18 @@ export default function Calculator() {
         return principalAndInterest;
     };
 
+    // Function to format numbers with commas
     const formatNumber = (num: number): string => {
         const formattedNum = num % 1 !== 0 ? num.toFixed(2) : num.toString(); // Round if floating point
         return formattedNum.replace(/\B(?=(\d{3})+(?!\d))/g, ","); // Insert commas
     };
 
+    // Memoized principalAndInterest and monthlyPayment
     const principalAndInterest = useMemo(() => calculatePrincipalAndInterest(inputs), [inputs]);
 
     const monthlyPayment = useMemo(() => principalAndInterest + inputs.propertyTaxes + inputs.homeInsurance + inputs.hoaFees + inputs.utilities, [principalAndInterest, inputs]);
 
+    // Effect to update URL when inputs change
     useEffect(() => {
         // Update URL when taxes or zip change
         const newParams = new URLSearchParams(searchParams.toString());
@@ -65,6 +71,7 @@ export default function Calculator() {
         router.push(`?${newParams.toString()}`, { scroll: false });
     }, [inputs.propertyTaxes, inputs.homeInsurance, defaultZip, router, searchParams]);
 
+    // Effect to update range progress
     useEffect(() => {
         const range = rangeInputRef.current;
 

@@ -14,6 +14,7 @@ export default function WhyBetter() {
     const [wBetter, setWBetter] = useState<number>(0);
     const sectionRef = useRef<HTMLElement>(null);
 
+    // Set isHome to true when user scrolls to the top of the page
     useEffect(() => {
         const handleScroll = () => {
             if (sectionRef.current) {

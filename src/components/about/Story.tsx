@@ -8,6 +8,7 @@ export default function Story() {
 
     const [playVideo, setPlayVideo] = useState<boolean>(false);
 
+    // Prevent scrolling when video is playing
     useEffect(() => {
         if (playVideo) {
             document.body.style.overflowY = "hidden";

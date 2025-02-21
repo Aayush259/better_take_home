@@ -1,4 +1,3 @@
-"use client";
 import Image from "next/image";
 import { ButtonPrimary } from "./Buttons";
 import { CiStopwatch } from "react-icons/ci";
@@ -9,8 +8,7 @@ import "@/styles/hero.css";
 export default function Hero() {
 
     return (
-        <section id="hero" className="">
-
+        <section id="hero">
             <div>
                 <h2>
                     {"Mortgages made simple"}
