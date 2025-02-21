@@ -100,15 +100,15 @@ export default function Footer() {
 
             <div className="footer-foot">
                 <div className="flex social-links">
-                    <Link href="/">
+                    <Link href="/" aria-label="Facebook">
                         <FiFacebook size={24} />
                     </Link>
 
-                    <Link href="/">
+                    <Link href="/" aria-label="Instagram">
                         <FiInstagram size={24} />
                     </Link>
 
-                    <Link href="/">
+                    <Link href="/" aria-label="LinkedIn">
                         <FiLinkedin size={24} />
                     </Link>
                 </div>

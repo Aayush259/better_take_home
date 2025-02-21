@@ -34,13 +34,13 @@ const Header = () => {
             </div>
 
             <div className="flex">
-                <Link href="tel:1234567890" className="call flex">
+                <Link href="tel:1234567890" className="call flex" aria-label="Call Us">
                     <IoMdCall />
                 </Link>
                 <Link className="desktop" href="/">{"Sign in"}</Link>
                 <Link href="/" className="continue">{"Continue"}</Link>
 
-                <button className="mobile" onClick={toggleHamBurger}>
+                <button className="mobile" onClick={toggleHamBurger} aria-label="Open Menu">
                     <RxHamburgerMenu size={22} />
                 </button>
             </div>

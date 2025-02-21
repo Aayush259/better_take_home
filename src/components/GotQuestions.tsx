@@ -47,7 +47,7 @@ export default function GotQuestions() {
                                         {question.description}
                                     </div>
 
-                                    <button className="ques-btn flex">
+                                    <button className="ques-btn flex" aria-label="Open Question">
                                         <FaArrowRight />
                                     </button>
                                 </div>
