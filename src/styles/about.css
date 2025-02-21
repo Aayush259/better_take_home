@@ -38,7 +38,7 @@ main {
     padding: 0.8rem;
 }
 
-#story h2 {
+#story h2, #company-timeline h2 {
     font-size: 2rem;
     font-weight: 500;
 }
@@ -100,6 +100,63 @@ main {
     letter-spacing: 0.5;
 }
 
+#company-timeline h2 {
+    text-align: center;
+}
+
+.timeline {
+    margin: 3rem auto;
+    width: 98vw;
+    max-width: 900px;
+}
+
+.timeline .time {
+    background-color: var(--bg-tertiary);
+    color: #FFFFFF;
+    margin: 0 auto;
+    padding: 0.5rem 1.8rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+    border-radius: 100px;
+    width: fit-content;
+}
+
+.t-line>div {
+    border-right: 4px solid #DFE0DC;
+    width: 50%;
+}
+
+.t-line>div.right {
+    margin-left: auto;
+    margin-right: 4px;
+    border-left: 4px solid #DFE0DC;
+    border-right: 0;
+}
+
+.timeline .desc {
+    padding: 2rem;
+}
+
+.timeline .desc p {
+    background-color: #DFE0DC;
+    color: #565D5A;
+    border-radius: 5px;
+    padding: 2rem;
+    line-height: 1.7;
+}
+
+.see-stories-btn {
+    color: #FFFFFF !important;
+    margin-top: 1rem;
+    padding: 0.8rem 1rem;
+    background-color: var(--bg-tertiary) !important;
+    display: block;
+}
+
+.see-stories-btn:hover {
+    background-color: var(--bg-primary) !important;
+}
+
 @media (max-width: 900px) {
     #our-mission h2 {
         font-size: 1.4rem;
@@ -124,5 +181,19 @@ main {
 
     #changing-things h2 {
         font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .timeline {
+        margin: 2rem auto;
+    }
+
+    .timeline .desc {
+        padding: 1rem;
+    }
+    
+    .timeline .desc p {
+        padding: 1rem;
     }
 }
