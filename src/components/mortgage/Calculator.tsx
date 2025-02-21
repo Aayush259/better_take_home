@@ -86,7 +86,7 @@ export default function Calculator() {
         return () => {
             range?.removeEventListener('input', updateRangeProgress);
         };
-    }, []);
+    }, [inputs, rangeInputRef]);
 
     return (
         <>
@@ -125,7 +125,19 @@ export default function Calculator() {
                 </div>
 
                 <div className="range">
-                    <input ref={rangeInputRef} type="range" name="h-price" id="h-price" />
+                    <input
+                        ref={rangeInputRef}
+                        type="range"
+                        name="h-price"
+                        id="h-price"
+                        min="50000"
+                        max="3000000"
+                        step="1000"
+                        value={inputs.homePrice}
+                        onChange={(e) =>
+                            setInputs((prev) => ({ ...prev, homePrice: Number(e.target.value) }))
+                        }
+                    />
                 </div>
 
                 <div className="flex dp">
