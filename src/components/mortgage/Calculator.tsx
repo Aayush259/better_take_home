@@ -63,7 +63,7 @@ export default function Calculator() {
         newParams.set("zip", defaultZip.toString()); // Keeping zip static for now
 
         router.push(`?${newParams.toString()}`, { scroll: false });
-    }, [inputs.propertyTaxes, inputs.homeInsurance])
+    }, [inputs.propertyTaxes, inputs.homeInsurance, defaultZip, router, searchParams]);
 
     useEffect(() => {
         const range = rangeInputRef.current;
