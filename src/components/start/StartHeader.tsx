@@ -17,7 +17,9 @@ export default function StartHeader() {
 
             <Link href="tel:4155238837" className="flex">
                 <IoMdCall className="tel-icon" />
-                {" Need help? Call (415) 523-8837"}
+                <span className="desktop">
+                    {" Need help? Call (415) 523-8837"}
+                </span>
             </Link>
 
             <Image

@@ -1,4 +1,10 @@
 import { IGotQuestionCategory, IWhyBetter } from "./interfaces";
+import { AiOutlineHome, AiOutlineDollarCircle } from "react-icons/ai";
+import { CgSmartHomeHeat } from "react-icons/cg";
+import { FcMoneyTransfer } from "react-icons/fc";
+import { TbCirclePercentage } from "react-icons/tb";
+import { FaMobileAlt } from "react-icons/fa";
+
 
 export const whyBetterData: IWhyBetter[] = [
     {
@@ -196,4 +202,37 @@ export const companyTimeline = [
             "You become part of the story by joining tens of thousands of happy Better Mortgage borrowers."
         ]
     }
+];
+
+export const startLinks = [
+    {
+        icon: AiOutlineHome,
+        title: "Buying a home",
+        href: "/",
+    },
+    {
+        icon: CgSmartHomeHeat,
+        title: "Refinance my mortgage",
+        href: "/",
+    },
+    {
+        icon: FcMoneyTransfer,
+        title: "Get cash from my home",
+        href: "/",
+    },
+];
+
+export const unlock = [
+    {
+        icon: TbCirclePercentage,
+        title: "Custom mortgage rates",
+    },
+    {
+        icon: AiOutlineDollarCircle,
+        title: "Exclusive offers",
+    },
+    {
+        icon: FaMobileAlt,
+        title: "A personalized dashboard",
+    },
 ];
