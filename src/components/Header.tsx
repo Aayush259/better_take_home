@@ -49,7 +49,7 @@ const Header = () => {
                 <div className="flex head">
                     <h2>{"Better"}</h2>
 
-                    <button onClick={toggleHamBurger}>
+                    <button onClick={toggleHamBurger} aria-label="Close Menu">
                         <RxCross2 size={32} />
                     </button>
                 </div>
