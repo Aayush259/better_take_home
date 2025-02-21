@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { IoMdCall } from "react-icons/io";
 import { RxHamburgerMenu, RxCross2 } from "react-icons/rx";
 import { FaCaretRight } from "react-icons/fa6";
@@ -18,6 +18,10 @@ const Header = () => {
     const pathname = usePathname();
 
     const toggleHamBurger = () => setHamActive(!hamActive);
+
+    useEffect(() => {
+        setHamActive(false);
+    }, [pathname]);
 
     if (pathname.includes("/start")) return null;
 
