@@ -7,6 +7,7 @@ import { FaCaretRight } from "react-icons/fa6";
 import { FaUser } from "react-icons/fa";
 import "@/styles/header.css";
 import { useHeader } from "@/context/HeaderContext";
+import { usePathname } from "next/navigation";
 
 const Header = () => {
 
@@ -14,7 +15,11 @@ const Header = () => {
 
     const { isHome } = useHeader();
 
+    const pathname = usePathname();
+
     const toggleHamBurger = () => setHamActive(!hamActive);
+
+    if (pathname.includes("/start")) return null;
 
     return (
         <header className={`${isHome && "home"} flex`}>
