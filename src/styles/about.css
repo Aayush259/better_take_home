@@ -81,6 +81,25 @@ main {
     justify-content: center;
 }
 
+#changing-things {
+    margin: 8rem 0;
+    background-color: var(--bg-tertiary);
+    color: #FFFFFF;
+    padding: 5rem 14rem;
+}
+
+#changing-things h2 {
+    font-size: 3rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+#changing-things p {
+    margin: 1rem 0;
+    line-height: 1.5;
+    letter-spacing: 0.5;
+}
+
 @media (max-width: 900px) {
     #our-mission h2 {
         font-size: 1.4rem;
@@ -97,5 +116,13 @@ main {
 
     #story h2 {
         font-size: 1.5rem;
+    }
+
+    #changing-things {
+        padding: 5rem 4rem;
+    }
+
+    #changing-things h2 {
+        font-size: 2rem;
     }
 }
