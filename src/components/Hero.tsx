@@ -50,6 +50,8 @@ export default function Hero() {
                 className="hero-variant"
                 width={593}
                 height={776}
+                loading="eager"
+                priority
             />
         </section>
     );
